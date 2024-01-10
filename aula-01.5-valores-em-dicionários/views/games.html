@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+</head>
+<body>
+    <h2>Esta é a página de Games.</h2>
+    <hr>
+    
+    <p><strong>Game mais jogado no momento:</strong></p>
+    {% for k, v in games.items() %}
+        <details>
+            <summary>{{k}}</summary>
+            <p>{{v}}</p>
+        </details>
+    {% endfor %}
+
+    <p>O jogo {{games['Título']}} tem {{2024-games['Ano']}} anos.</p>
+
+    <p>Está sendo jogador por:</p>
+    <ol>
+        {% for j in jogadores: %}
+            <li>{{j}}</li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
