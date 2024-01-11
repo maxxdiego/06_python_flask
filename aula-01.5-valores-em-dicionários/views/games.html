@@ -10,14 +10,14 @@
     <hr>
     
     <p><strong>Game mais jogado no momento:</strong></p>
-    {% for k, v in games.items() %}
+    {% for k, v in game.items() %}
         <details>
             <summary>{{k}}</summary>
             <p>{{v}}</p>
         </details>
     {% endfor %}
 
-    <p>O jogo {{games['Título']}} tem {{2024-games['Ano']}} anos.</p>
+    <p>O jogo {{game['Título']}} tem {{2024-game['Ano']}} anos.</p>
 
     <p>Está sendo jogador por:</p>
     <ol>

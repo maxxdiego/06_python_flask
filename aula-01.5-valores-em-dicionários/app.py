@@ -8,12 +8,12 @@ def home():
 
 @app.route('/games')
 def games():
-    games = {'Título' : 'CS-GO', 
+    game = {'Título' : 'CS-GO', 
              'Ano' : 2012,
              'Categoria' : 'FPS Online'}
-    jogadores = ['Pedro', 'João', 'Marcos', 'Maria', 'Diego']
+    jogadores = ['Pedro', 'João', 'Marcos', 'Maria']
     return render_template('games.html',
-                           games=games,
+                           game=game,
                            jogadores=jogadores)
 
 if __name__ == '__main__':

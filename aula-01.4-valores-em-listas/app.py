@@ -11,7 +11,7 @@ def games():
     titulo = 'CS-GO'
     ano = 2012
     categoria = 'FPS Online'
-    jogadores = ['Pedro', 'João', 'Marcos', 'Maria', 'Diego']
+    jogadores = ['Pedro', 'João', 'Marcos', 'Maria']
     return render_template('games.html',
                            titulo=titulo, 
                            ano=ano, 
