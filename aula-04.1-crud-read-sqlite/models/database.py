@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 # Classe responsável por criar a entidade "Games" com seus atributos.
-class Games(db.Model):
+class Game(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     titulo = db.Column(db.String(150))
     ano = db.Column(db.Integer)

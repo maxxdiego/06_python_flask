@@ -1,5 +1,5 @@
 from flask import render_template, request
-from models.database import db, Games
+from models.database import db, Game
 import urllib
 import json
 
@@ -50,11 +50,12 @@ def init_app(app):
                 return f'Game com a ID {id} não foi encontrado.'
         else:
             return render_template('apigames.html', gamesjson=gamesjson)
-        
+    
+    # CRUD - LISTAGEM    
     @app.route('/estoque')
     def estoque():
         # Armazena em "gamesestoque" todos os valores, como em um SELECT e encaminha para estoque.html
-        gamesestoque = Games.query.all()
+        gamesestoque = Game.query.all()
         return render_template('estoque.html', gamesestoque=gamesestoque)
         
         
