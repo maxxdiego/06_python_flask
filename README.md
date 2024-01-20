@@ -12,7 +12,7 @@ Pré-requisitos:
 
 ```bash
 # clonar repositório
-git clone https://github.com/fbamuniz/06_python_flask.git
+git clone https://github.com/maxxdiego/06_python_flask.git
 
 ```
 
