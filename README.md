@@ -16,6 +16,12 @@ git clone https://github.com/maxxdiego/06_python_flask.git
 
 ```
 
+Para rodar as aplicações, executar no console:
+```bash
+python app.py
+
+```
+
 No navegador acessar as aplicações através do localhost:5000.
 
 # Autor
