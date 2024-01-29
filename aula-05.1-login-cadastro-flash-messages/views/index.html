@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Esta é a Homepage.</h2>
+
+    {% for g in gamesdb %}
+        {{g.titulo}}<br>
+        {{g.ano}}<br>
+        {{g.categoria}}<br>
+        {{g.preco}}<br>
+    {% endfor %}
+
+{% endblock content %}

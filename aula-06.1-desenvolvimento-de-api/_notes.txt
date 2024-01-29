@@ -1,0 +1,36 @@
+Verificar versão do python
+py --version
+
+Criando ambiente virtual
+python -m venv venv
+
+Ativando ambiente virtual
+venv\Scripts\activate
+Desativar: deactivate
+
+Selecionar o interpretador (select interpreter)
+
+Atualizar o pip
+python.exe -m pip install --upgrade pip
+python.exe -m pip install --upgrade setuptools
+python.exe -m pip install --upgrade wheel
+
+-entidades
+-models
+-schemas
+-services
+-views
+
+pip install flask
+pip install flask-migrate==2.5.2
+pip install flask-restful
+pip install sqlalchemy
+pip install flask-sqlalchemy
+pip install marshmallow-sqlalchemy
+pip install flask-marshmallow
+pip install config
+
+$env:FLASK_APP = "__init__.py"
+flask db init
+flask db migrate
+flask db upgrade
