@@ -12,7 +12,7 @@
 <div class="container col-4">
     <div class="card mt-4">
         <div class="card-body m-auto">
-            <form action="{#{url_for('authenticate')}#}" method="post">
+            <form action="{{url_for('login')}}" method="post">
                 <label for="email">E-mail:</label>
                 <input class="form-control" name="email" type="email" placeholder="email@exemplo.com"><br>
                 <label for="password">Senha:</label>
