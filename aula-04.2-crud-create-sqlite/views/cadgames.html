@@ -1,6 +1,13 @@
-{% extends 'base.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Games</title>
+</head>
+<body>
     <h2>Cadastro de Games</h2>
+    <hr>
     <form action="{{url_for('cadgames')}}", method="POST">
         <label for="titulo">Título:</label>
         <input type="text" name="titulo" required>
@@ -13,9 +20,21 @@
     <br>
     <hr>
     <h4>Games cadastrados:</h4>
+    <table border="1">
+        <tr>
+            <th style="width: 100px;">Título:</th>
+            <th style="width: 100px;">Ano:</th>
+            <th style="width: 100px;">Categoria:</th>
+        </tr>
+        
     {% for game in gamelist %}
-    Título: <strong>{{game.Título}}</strong> <br>
-    Ano: <strong>{{game.Ano}}</strong> <br>
-    Categoria: <strong>{{game.Categoria}}</strong> <br><br>
-    {% endfor %}
-{% endblock content %}
+        <tr>
+            <td>{{game.Título}}</td>
+            <td>{{game.Ano}}</td>
+            <td>{{game.Categoria}}</td>
+        </tr>
+    {% endfor %}     
+</table>
+
+</body>
+</html>
