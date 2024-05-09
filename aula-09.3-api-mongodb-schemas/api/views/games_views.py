@@ -9,6 +9,6 @@ class GameList(Resource):
     def get(self):
         games = game_service.get_games()
         g = game_schema.GameSchema(many=True)
-        return make_response(g.jsonify(games), 200)  
+        return make_response(g.jsonify(games), 200) #Código 200 (OK): Sucesso na solicitação. 
 
 api.add_resource(GameList, '/games')
