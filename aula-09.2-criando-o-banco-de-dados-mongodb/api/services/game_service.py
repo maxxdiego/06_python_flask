@@ -7,7 +7,3 @@ def add_game(game):
         'descricao': game.descricao,
         'ano': game.ano
     })
-
-@staticmethod
-def get_games():
-    return list(mongo.db.games.find())
