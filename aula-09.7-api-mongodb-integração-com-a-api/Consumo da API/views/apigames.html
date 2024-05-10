@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container" style="background-color: #f0f0f0; border-radius: 8px;">
+        <div class="row">
+            {% for g in gamesjson %}
+                <div class="col-md-3 m-auto">
+                    <div class="card" style="width: 16rem;">
+                        <img src="{{g.thumbnail}}">
+                        <div class="card-body">
+                            <h5>{{g.titulo}}</h5>
+                            <p>{{g.descricao}}</p>
+                            <p>{{g.ano}}</p>
+                            <input type="button" value="+ Info" class="btn btn-dark" disabled>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
