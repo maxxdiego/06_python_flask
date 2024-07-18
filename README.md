@@ -27,7 +27,7 @@ Pré-requisitos:
 
 ```bash
 # clonar repositório
-git clone https://github.com/maxxdiego/06_python_flask.git
+git clone https://github.com/maxxdiego/07_python_flask.git
 
 ```
 
